@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Mango | AI Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>Project MANGO</h1>
+        <p>Local Text-to-Image Inference</p>
+
+        <div class="input-group">
+            <input type="text" id="promptBox" placeholder="Enter prompt...">
+            <button id="generateBtn" onclick="generateImage()">Generate</button>
+        </div>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="status-text" id="statusText"></div>
+
+        <div class="loading" id="loader">Generating image...</div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Generated Output">
+    </div>
+
+</body>
+</html>
